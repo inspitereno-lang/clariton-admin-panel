@@ -12,13 +12,13 @@ interface HeaderProps {
   actions?: React.ReactNode;
 }
 
-export function Header({ 
-  title, 
-  breadcrumbs, 
-  showSearch = false, 
+export function Header({
+  title,
+  breadcrumbs,
+  showSearch = false,
   searchPlaceholder = 'Search...',
   onSearch,
-  actions 
+  actions
 }: HeaderProps) {
   const [isDark, setIsDark] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
